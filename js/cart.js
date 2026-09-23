@@ -2,7 +2,7 @@
    LANCHONETE DA HELÔ - GERENCIADOR DO CARRINHO E WHATSAPP
    ========================================================================== */
 
-const WHATSAPP_PHONE = '5511999999999'; // Substituir pelo número real desejado
+const WHATSAPP_PHONE = '558487543937';
 
 class CartManager {
   constructor() {

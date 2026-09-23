@@ -55,7 +55,7 @@ Projeto web moderno, responsivo e 100% funcional desenvolvido sob medida para a 
 ### 📱 Como configurar o seu número de WhatsApp:
 No arquivo [`js/cart.js`](file:///C:/Users/acvin/.gemini/antigravity/scratch/lanchonete-da-helo/js/cart.js), altere a linha 5 para o seu número com DDD (apenas números):
 ```javascript
-const WHATSAPP_PHONE = '5511999999999'; // Coloque seu número aqui
+const WHATSAPP_PHONE = '558487543937'; // Número da Helô configurado
 ```
 
 ---
