@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardápio Completo - Lanchonete da Helô</title>
+  <meta name="description" content="Confira nosso cardápio completo: lanches artesanais, porções generosas, bebidas geladas e sobremesas deliciosas. Peça direto pelo WhatsApp!">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+</head>
+<body>
+
+  <!-- CABEÇALHO / NAVBAR -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Lanchonete da Helô Início">
+        <img src="assets/images/logo.svg" alt="Lanchonete da Helô" width="220" height="60">
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+        <a href="index.html" class="nav-link">Início</a>
+        <a href="cardapio.html" class="nav-link active">Cardápio</a>
+        <a href="sobre.html" class="nav-link">Sobre Nós</a>
+        <a href="galeria.html" class="nav-link">Galeria</a>
+        <a href="contato.html" class="nav-link">Contato</a>
+      </nav>
+
+      <button class="btn-header-order trigger-open-cart">
+        <svg viewBox="0 0 24 24">
+          <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.78 14.15c-.24.67-1.39 1.28-1.92 1.36-.51.08-1.17.11-3.79-.96-3.34-1.37-5.48-4.76-5.65-4.98-.16-.23-1.35-1.8-1.35-3.43 0-1.63.85-2.43 1.15-2.76.3-.33.66-.41.88-.41.22 0 .44.002.63.013.2.01.47-.077.74.57.28.67.95 2.33 1.04 2.5.08.17.14.37.03.6-.11.22-.17.36-.33.56-.16.2-.34.45-.49.6-.16.16-.33.34-.14.67.19.33.84 1.38 1.8 2.24 1.24 1.1 2.29 1.44 2.62 1.6.33.16.52.14.71-.08.2-.22.84-.98 1.07-1.32.22-.33.45-.28.75-.17.31.11 1.95.92 2.29 1.08.33.16.56.24.64.38.08.14.08.82-.16 1.49z"/>
+        </svg>
+        MEU PEDIDO
+      </button>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menu de navegação">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="menu-page-section">
+      <div class="container">
+        <!-- Título do Cardápio -->
+        <div class="menu-header">
+          <h1 class="menu-title">
+            <span class="spark-accent">✨</span>
+            Nosso Cardápio
+            <span class="spark-accent">✨</span>
+          </h1>
+          <p class="menu-subtitle">
+            Receitas artesanais preparadas na hora com ingredientes frescos e muito carinho!
+          </p>
+        </div>
+
+        <!-- Filtros por Categoria -->
+        <div class="menu-filters">
+          <button class="filter-btn active" data-filter="all">Todos os Itens</button>
+          <button class="filter-btn" data-filter="lanches">🍔 Lanches</button>
+          <button class="filter-btn" data-filter="porcoes">🍟 Porções</button>
+          <button class="filter-btn" data-filter="bebidas">🥤 Bebidas</button>
+          <button class="filter-btn" data-filter="sobremesas">🍰 Sobremesas</button>
+          <button class="filter-btn" data-filter="combos">⭐ Combos Especiais</button>
+        </div>
+
+        <!-- Grid de Produtos -->
+        <div class="menu-grid" id="menuGrid">
+          <!-- 1. X-Helô Especial -->
+          <article class="product-card" data-category="lanches">
+            <div class="product-media">
+              <img src="assets/images/photo-burger.jpg" alt="X-Helô Especial" loading="lazy">
+              <span class="product-badge">Mais Pedido ⭐</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">X-Helô Especial</h3>
+              <p class="product-description">Hambúrguer artesanal 180g grelhado no fogo, cheddar derretido, fatias crocantes de bacon, alface fresca, tomate e maionese especial da casa no pão brioche amanteigado.</p>
+              <div class="product-bottom">
+                <span class="product-price">R$ 34,90</span>
+                <button class="btn-add-cart" data-id="lanche-1" data-name="X-Helô Especial" data-price="34.90">
+                  + Adicionar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. X-Calabresa Artesanal -->
+          <article class="product-card" data-category="lanches">
+            <div class="product-media">
+              <img src="assets/images/hero-burger.jpg" alt="X-Calabresa Artesanal" loading="lazy">
+              <span class="product-badge">Artesanal</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">X-Calabresa Artesanal</h3>
+              <p class="product-description">Hambúrguer de 160g, queijo muçarela, fatias de linguiça calabresa defumada chapeada, cebola caramelizada no shoyu e maionese verde artesanal.</p>
+              <div class="product-bottom">
+                <span class="product-price">R$ 29,90</span>
+                <button class="btn-add-cart" data-id="lanche-2" data-name="X-Calabresa Artesanal" data-price="29.90">
+                  + Adicionar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. Misto Quente Especial Tostado -->
+          <article class="product-card" data-category="lanches">
+            <div class="product-media">
+              <img src="assets/images/photo-sandwich.jpg" alt="Misto Quente Especial Tostado" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Misto Quente da Helô</h3>
+              <p class="product-description">Pão de fôrma artesanal douradinho e crocante na chapa, recheado com camadas generosas de muçarela derretida, presunto selecionado, tomate e orégano.</p>
+              <div class="product-bottom">
+                <span class="product-price">R$ 18,90</span>
+                <button class="btn-add-cart" data-id="lanche-3" data-name="Misto Quente da Helô" data-price="18.90">
+                  + Adicionar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. Porção Calabresa Acebolada com Fritas -->
+          <article class="product-card" data-category="porcoes">
+            <div class="product-media">
+              <img src="assets/images/photo-calabresa-fritas.jpg" alt="Calabresa com Fritas" loading="lazy">
+              <span class="product-badge">Para Compartilhar</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Calabresa com Fritas</h3>
+              <p class="product-description">Porção generosa de linguiça calabresa fatiada e acebolada na chapa bem douradinha, servida acompanhada de batatas fritas crocantes e molho especial.</p>
+              <div class="product-bottom">
+                <span class="product-price">R$ 38,90</span>
+                <button class="btn-add-cart" data-id="porcao-1" data-name="Calabresa com Fritas" data-price="38.90">
+                  + Adicionar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. Cestinha de Pastéis Sequinhos (8 un) -->
+          <article class="product-card" data-category="porcoes">
+            <div class="product-media">
+              <img src="assets/images/photo-pasteis.jpg" alt="Cestinha de Pastéis" loading="lazy">
+              <span class="product-badge">Crocante</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Cestinha de Pastéis (8 un)</h3>
+              <p class="product-description">Pastéis artesanais fritos na hora com massa bem sequinha e crocante. Sabores sortidos: queijo derretido, carne temperadinha com azeitona e pizza.</p>
+              <div class="product-bottom">
+                <span class="product-price">R$ 28,90</span>
+                <button class="btn-add-cart" data-id="porcao-2" data-name="Cestinha de Pastéis (8 un)" data-price="28.90">
+                  + Adicionar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. Batata Frita com Cheddar e Bacon -->
+          <article class="product-card" data-category="porcoes">
+            <div class="product-media">
+              <img src="assets/images/photo-calabresa-fritas.jpg" alt="Fritas com Cheddar e Bacon" loading="lazy">
+              <span class="product-badge">Favorito</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Fritas Cheddar & Bacon</h3>
+              <p class="product-description">Batatas palito crocantes e sequinhas, cobertas com nosso queijo cheddar cremoso aquecido e cubos crocantes de bacon frito.</p>
+              <div class="product-bottom">
+                <span class="product-price">R$ 32,90</span>
+                <button class="btn-add-cart" data-id="porcao-3" data-name="Fritas Cheddar & Bacon" data-price="32.90">
+                  + Adicionar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7. Milkshake Trufado de Chocolate -->
+          <article class="product-card" data-category="bebidas">
+            <div class="product-media">
+              <img src="assets/images/photo-milkshake.jpg" alt="Milkshake Trufado de Chocolate" loading="lazy">
+              <span class="product-badge">Super Cremoso</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Milkshake Trufado (500ml)</h3>
+              <p class="product-description">Sorvete cremoso de chocolate batido com calda trufada artesanal, finalizado com generosa cobertura de chantilly e raspas de chocolate nobre.</p>
+              <div class="product-bottom">
+                <span class="product-price">R$ 19,90</span>
+                <button class="btn-add-cart" data-id="bebida-1" data-name="Milkshake Trufado (500ml)" data-price="19.90">
+                  + Adicionar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8. Sucos Naturais da Fruta -->
+          <article class="product-card" data-category="bebidas">
+            <div class="product-media">
+              <img src="assets/images/counter-chalkboard.jpg" alt="Sucos Naturais" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Suco Natural da Fruta (450ml)</h3>
+              <p class="product-description">Feito na hora com frutas frescas selecionadas. Escolha entre Laranja, Abacaxi com Hortelã, Maracujá ou Limonada Suíça bem gelada.</p>
+              <div class="product-bottom">
+                <span class="product-price">R$ 10,90</span>
+                <button class="btn-add-cart" data-id="bebida-2" data-name="Suco Natural da Fruta (450ml)" data-price="10.90">
+                  + Adicionar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 9. Refrigerantes & Cervejas Geladas -->
+          <article class="product-card" data-category="bebidas">
+            <div class="product-media">
+              <img src="assets/images/interior-tables.jpg" alt="Refrigerantes e Bebidas" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Refrigerante Lata (350ml)</h3>
+              <p class="product-description">Coca-Cola Original, Coca Zero, Guaraná Antarctica, Fanta Laranja ou Sprite. Servido estupidamente gelado!</p>
+              <div class="product-bottom">
+                <span class="product-price">R$ 6,50</span>
+                <button class="btn-add-cart" data-id="bebida-3" data-name="Refrigerante Lata (350ml)" data-price="6.50">
+                  + Adicionar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 10. Bolo de Chocolate com Brigadeiro -->
+          <article class="product-card" data-category="sobremesas">
+            <div class="product-media">
+              <img src="assets/images/photo-bolo-chocolate.jpg" alt="Bolo Brigadeiro da Helô" loading="lazy">
+              <span class="product-badge">Destaque Doce</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Bolo Brigadeiro da Helô</h3>
+              <p class="product-description">Fatia farta de bolo de chocolate super molhadinho, recheada e coberta com brigadeiro gourmet cremoso e granulado crocante.</p>
+              <div class="product-bottom">
+                <span class="product-price">R$ 16,90</span>
+                <button class="btn-add-cart" data-id="sobremesa-1" data-name="Bolo Brigadeiro da Helô" data-price="16.90">
+                  + Adicionar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 11. Petit Gâteau com Sorvete de Baunilha -->
+          <article class="product-card" data-category="sobremesas">
+            <div class="product-media">
+              <img src="assets/images/photo-bolo-chocolate.jpg" alt="Petit Gâteau" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Petit Gâteau com Sorvete</h3>
+              <p class="product-description">Bolinho de chocolate com centro quente e cremoso derretido, acompanhado de uma bola de sorvete de baunilha artesanal e calda de chocolate.</p>
+              <div class="product-bottom">
+                <span class="product-price">R$ 22,90</span>
+                <button class="btn-add-cart" data-id="sobremesa-2" data-name="Petit Gâteau com Sorvete" data-price="22.90">
+                  + Adicionar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 12. Combo Helô Individual -->
+          <article class="product-card" data-category="combos">
+            <div class="product-media">
+              <img src="assets/images/hero-burger.jpg" alt="Combo Individual Helô" loading="lazy">
+              <span class="product-badge">Melhor Custo-Benefício</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Combo Individual Helô</h3>
+              <p class="product-description">1 X-Helô Especial + 1 Batata Frita Individual Crocante + 1 Refrigerante Lata 350ml bem gelado. O clássico perfeito!</p>
+              <div class="product-bottom">
+                <span class="product-price">R$ 44,90</span>
+                <button class="btn-add-cart" data-id="combo-1" data-name="Combo Individual Helô" data-price="44.90">
+                  + Adicionar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 13. Combo Casal Apaixonado -->
+          <article class="product-card" data-category="combos">
+            <div class="product-media">
+              <img src="assets/images/photo-burger.jpg" alt="Combo Casal Apaixonado" loading="lazy">
+              <span class="product-badge">Para 2 Pessoas</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Combo Casal Apaixonado</h3>
+              <p class="product-description">2 Lanches (X-Helô ou X-Calabresa) + 1 Porção Média de Fritas com Bacon e Cheddar + 2 Bebidas (Refrigerante ou Suco).</p>
+              <div class="product-bottom">
+                <span class="product-price">R$ 84,90</span>
+                <button class="btn-add-cart" data-id="combo-2" data-name="Combo Casal Apaixonado" data-price="84.90">
+                  + Adicionar
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ COMPLETO -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="assets/images/logo.svg" alt="Lanchonete da Helô" width="200" height="50" style="margin-bottom: 14px;">
+          <p>Feito com amor, carinho e receitas tradicionais para proporcionar a melhor experiência a você e sua família.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <div class="footer-links">
+            <a href="index.html">Início</a>
+            <a href="cardapio.html">Nosso Cardápio</a>
+            <a href="sobre.html">Sobre a Helô</a>
+            <a href="galeria.html">Galeria de Fotos</a>
+            <a href="contato.html">Onde Estamos</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Horário de Funcionamento</h4>
+          <p>Terça a Domingo<br>das 18h às 23h30<br><em>(Segundas-feiras fechado)</em></p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Peça sem Sair de Casa</h4>
+          <p>Atendimento rápido pelo WhatsApp com delivery para toda a região!</p>
+          <a href="cardapio.html" class="btn-primary" style="margin-top: 12px; padding: 10px 20px; font-size: 0.9rem;">
+            Fazer Pedido
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        © 2026 Lanchonete da Helô. Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE DO CARRINHO -->
+  <button class="floating-cart-btn" id="floatingCartBtn" aria-label="Abrir carrinho de compras">
+    <div class="cart-icon-wrapper">
+      <svg viewBox="0 0 24 24">
+        <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+      </svg>
+      <span class="cart-count-badge" id="cartCountBadge">0</span>
+    </div>
+    <span>Ver Pedido</span>
+  </button>
+
+  <!-- DRAWER DO CARRINHO -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Seu Pedido">
+    <div class="cart-drawer-header">
+      <h3 class="cart-drawer-title">
+        <span>🍔</span> Seu Pedido
+      </h3>
+      <button class="btn-close-drawer" id="btnCloseDrawer" aria-label="Fechar">✕</button>
+    </div>
+
+    <div class="cart-drawer-body" id="cartItemsList"></div>
+
+    <div class="cart-drawer-footer">
+      <div class="cart-total-row">
+        <span>Total:</span>
+        <span class="cart-total-amount" id="cartTotalAmount">R$ 0,00</span>
+      </div>
+
+      <div class="cart-form-group">
+        <label for="clientName">Seu Nome:</label>
+        <input type="text" id="clientName" class="cart-form-input" placeholder="Ex: Maria Silva">
+      </div>
+
+      <div class="cart-form-group">
+        <label for="deliveryType">Tipo:</label>
+        <select id="deliveryType" class="cart-form-select">
+          <option value="Entrega (Delivery)">Entrega (Delivery)</option>
+          <option value="Retirada no Balcão">Retirada no Balcão</option>
+          <option value="Consumo no Local">Consumo no Local</option>
+        </select>
+      </div>
+
+      <div class="cart-form-group">
+        <label for="clientAddress">Endereço de Entrega:</label>
+        <input type="text" id="clientAddress" class="cart-form-input" placeholder="Rua, número e bairro">
+      </div>
+
+      <div class="cart-form-group">
+        <label for="orderNotes">Observações:</label>
+        <input type="text" id="orderNotes" class="cart-form-input" placeholder="Ex: sem cebola, ponto da carne...">
+      </div>
+
+      <button class="btn-checkout-whatsapp" id="btnCheckoutWhatsApp">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.78 14.15c-.24.67-1.39 1.28-1.92 1.36-.51.08-1.17.11-3.79-.96-3.34-1.37-5.48-4.76-5.65-4.98-.16-.23-1.35-1.8-1.35-3.43 0-1.63.85-2.43 1.15-2.76.3-.33.66-.41.88-.41.22 0 .44.002.63.013.2.01.47-.077.74.57.28.67.95 2.33 1.04 2.5.08.17.14.37.03.6-.11.22-.17.36-.33.56-.16.2-.34.45-.49.6-.16.16-.33.34-.14.67.19.33.84 1.38 1.8 2.24 1.24 1.1 2.29 1.44 2.62 1.6.33.16.52.14.71-.08.2-.22.84-.98 1.07-1.32.22-.33.45-.28.75-.17.31.11 1.95.92 2.29 1.08.33.16.56.24.64.38.08.14.08.82-.16 1.49z"/>
+        </svg>
+        ENVIAR PEDIDO NO WHATSAPP
+      </button>
+    </div>
+  </aside>
+
+  <!-- SCRIPTS -->
+  <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
+  <script>
+    // Script dos Filtros de Categoria
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const productCards = document.querySelectorAll('.product-card');
+
+      function filterCategory(category) {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        const activeBtn = Array.from(filterBtns).find(b => b.getAttribute('data-filter') === category) || filterBtns[0];
+        activeBtn.classList.add('active');
+
+        productCards.forEach(card => {
+          const cardCat = card.getAttribute('data-category');
+          if (category === 'all' || cardCat === category) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const cat = btn.getAttribute('data-filter');
+          filterCategory(cat);
+        });
+      });
+
+      // Se a URL contiver hash (ex: #porcoes), filtra automaticamente
+      const hash = window.location.hash.replace('#', '');
+      if (hash) {
+        filterCategory(hash);
+      }
+    });
+  </script>
+</body>
+</html>

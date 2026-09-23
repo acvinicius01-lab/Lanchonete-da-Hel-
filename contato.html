@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato e Localização - Lanchonete da Helô</title>
+  <meta name="description" content="Venha nos visitar ou fale conosco pelo WhatsApp. Confira nosso endereço, horários de atendimento e localização no mapa.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+</head>
+<body>
+
+  <!-- CABEÇALHO / NAVBAR -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Lanchonete da Helô Início">
+        <img src="assets/images/logo.svg" alt="Lanchonete da Helô" width="220" height="60">
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+        <a href="index.html" class="nav-link">Início</a>
+        <a href="cardapio.html" class="nav-link">Cardápio</a>
+        <a href="sobre.html" class="nav-link">Sobre Nós</a>
+        <a href="galeria.html" class="nav-link">Galeria</a>
+        <a href="contato.html" class="nav-link active">Contato</a>
+      </nav>
+
+      <a href="cardapio.html" class="btn-header-order trigger-open-cart">
+        <svg viewBox="0 0 24 24">
+          <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.78 14.15c-.24.67-1.39 1.28-1.92 1.36-.51.08-1.17.11-3.79-.96-3.34-1.37-5.48-4.76-5.65-4.98-.16-.23-1.35-1.8-1.35-3.43 0-1.63.85-2.43 1.15-2.76.3-.33.66-.41.88-.41.22 0 .44.002.63.013.2.01.47-.077.74.57.28.67.95 2.33 1.04 2.5.08.17.14.37.03.6-.11.22-.17.36-.33.56-.16.2-.34.45-.49.6-.16.16-.33.34-.14.67.19.33.84 1.38 1.8 2.24 1.24 1.1 2.29 1.44 2.62 1.6.33.16.52.14.71-.08.2-.22.84-.98 1.07-1.32.22-.33.45-.28.75-.17.31.11 1.95.92 2.29 1.08.33.16.56.24.64.38.08.14.08.82-.16 1.49z"/>
+        </svg>
+        FAÇA SEU PEDIDO
+      </a>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menu de navegação">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-page-section">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 36px;">
+          <h1 class="contact-section-title">
+            <span class="spark-accent">✨</span>
+            Fale com a Helô
+            <span class="spark-accent">✨</span>
+          </h1>
+          <p style="font-size: 1.15rem; color: var(--color-text-muted);">
+            Venha saborear nossos lanches no nosso espaço acolhedor ou faça seu pedido para entrega!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Coluna Esquerda: Informações & Form -->
+          <div class="contact-info-card">
+            <h2 style="font-family: var(--font-rounded); font-size: 1.5rem; color: var(--color-text-dark); margin-bottom: 18px;">
+              Informações de Atendimento
+            </h2>
+
+            <div class="contact-info-list">
+              <!-- Endereço -->
+              <div class="contact-info-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+                  </svg>
+                </div>
+                <div class="contact-details">
+                  <h4>Onde Estamos</h4>
+                  <p>Sítio Inpoeiras, 22<br>Cerro Corá - RN, CEP 59395-000</p>
+                </div>
+              </div>
+
+              <!-- Horários -->
+              <div class="contact-info-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" fill="none"/>
+                    <path d="M12 7v5l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div class="contact-details">
+                  <h4>Horário de Funcionamento</h4>
+                  <p>Terça a Domingo: <strong>18h00 às 23h30</strong><br><em>Segundas-feiras: Fechado para descanso da equipe</em></p>
+                </div>
+              </div>
+
+              <!-- WhatsApp -->
+              <div class="contact-info-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.78 14.15c-.24.67-1.39 1.28-1.92 1.36-.51.08-1.17.11-3.79-.96-3.34-1.37-5.48-4.76-5.65-4.98-.16-.23-1.35-1.8-1.35-3.43 0-1.63.85-2.43 1.15-2.76.3-.33.66-.41.88-.41.22 0 .44.002.63.013.2.01.47-.077.74.57.28.67.95 2.33 1.04 2.5.08.17.14.37.03.6-.11.22-.17.36-.33.56-.16.2-.34.45-.49.6-.16.16-.33.34-.14.67.19.33.84 1.38 1.8 2.24 1.24 1.1 2.29 1.44 2.62 1.6.33.16.52.14.71-.08.2-.22.84-.98 1.07-1.32.22-.33.45-.28.75-.17.31.11 1.95.92 2.29 1.08.33.16.56.24.64.38.08.14.08.82-.16 1.49z"/>
+                  </svg>
+                </div>
+                <div class="contact-details">
+                  <h4>WhatsApp & Telefone</h4>
+                  <p><a href="https://wa.me/5511999999999" target="_blank" style="color: var(--color-primary-red); font-weight: 700;">(11) 99999-9999</a> / (11) 3456-7890</p>
+                </div>
+              </div>
+
+              <!-- Formas de Pagamento -->
+              <div class="contact-info-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24">
+                    <rect x="2" y="5" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2" fill="none"/>
+                    <line x1="2" y1="10" x2="22" y2="10" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                </div>
+                <div class="contact-details">
+                  <h4>Formas de Pagamento</h4>
+                  <p>Pix com chave imediata, Cartões de Débito e Crédito, Dinheiro e Vales Refeição (Alelo, Sodexo, VR).</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botão Direto para Conversar -->
+            <a href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20a%20Lanchonete%20da%20Hel%C3%B4!" target="_blank" class="btn-checkout-whatsapp" style="margin-top: 24px; text-decoration: none;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.78 14.15c-.24.67-1.39 1.28-1.92 1.36-.51.08-1.17.11-3.79-.96-3.34-1.37-5.48-4.76-5.65-4.98-.16-.23-1.35-1.8-1.35-3.43 0-1.63.85-2.43 1.15-2.76.3-.33.66-.41.88-.41.22 0 .44.002.63.013.2.01.47-.077.74.57.28.67.95 2.33 1.04 2.5.08.17.14.37.03.6-.11.22-.17.36-.33.56-.16.2-.34.45-.49.6-.16.16-.33.34-.14.67.19.33.84 1.38 1.8 2.24 1.24 1.1 2.29 1.44 2.62 1.6.33.16.52.14.71-.08.2-.22.84-.98 1.07-1.32.22-.33.45-.28.75-.17.31.11 1.95.92 2.29 1.08.33.16.56.24.64.38.08.14.08.82-.16 1.49z"/>
+              </svg>
+              FALAR DIRETO NO WHATSAPP
+            </a>
+          </div>
+
+          <!-- Coluna Direita: Mapa e Foto -->
+          <div class="map-card">
+            <div style="padding: 20px 24px; border-bottom: 1px solid var(--border-light); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+              <div>
+                <h3 style="font-family: var(--font-rounded); font-size: 1.25rem; color: var(--color-text-dark); margin: 0 0 4px;">
+                  Como Chegar
+                </h3>
+                <p style="font-size: 0.9rem; color: var(--color-text-muted); margin: 0;">
+                  Venha nos visitar em Cerro Corá - RN!
+                </p>
+              </div>
+              <a href="https://maps.app.goo.gl/6ATThQkJfXhPAP9i6?g_st=aw" target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding: 8px 16px; font-size: 0.85rem; text-decoration: none; border-radius: 50px; display: inline-flex; align-items: center; gap: 6px;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+                </svg>
+                Abrir no Google Maps
+              </a>
+            </div>
+            
+            <!-- Google Maps Embed -->
+            <iframe 
+              class="map-frame" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.8519782559567!2d-36.34556372412803!3d-6.032588793952778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b1c7f939a6f771%3A0xa44d577753584069!2sLanchonete%20da%20Hel%C3%B4!5e0!3m2!1spt-BR!2sbr!4v1710000000000!5m2!1spt-BR!2sbr" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade" 
+              title="Mapa de localização da Lanchonete da Helô">
+            </iframe>
+
+            <div style="padding: 18px 24px; background: #faf5ee; display: flex; align-items: center; justify-content: space-between;">
+              <span style="font-weight: 600; color: var(--color-text-dark);">Localização:</span>
+              <span style="color: var(--color-text-muted); font-size: 0.9rem;">Sítio Inpoeiras, 22 - Cerro Corá/RN</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ COMPLETO -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="assets/images/logo.svg" alt="Lanchonete da Helô" width="200" height="50" style="margin-bottom: 14px;">
+          <p>Feito com amor, carinho e receitas tradicionais para proporcionar a melhor experiência a você e sua família.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <div class="footer-links">
+            <a href="index.html">Início</a>
+            <a href="cardapio.html">Nosso Cardápio</a>
+            <a href="sobre.html">Sobre a Helô</a>
+            <a href="galeria.html">Galeria de Fotos</a>
+            <a href="contato.html">Onde Estamos</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Horário de Funcionamento</h4>
+          <p>Terça a Domingo<br>das 18h às 23h30<br><em>(Segundas-feiras fechado)</em></p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Peça sem Sair de Casa</h4>
+          <p>Atendimento rápido pelo WhatsApp com delivery para toda a região!</p>
+          <a href="cardapio.html" class="btn-primary" style="margin-top: 12px; padding: 10px 20px; font-size: 0.9rem;">
+            Fazer Pedido
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        © 2026 Lanchonete da Helô. Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE DO CARRINHO -->
+  <button class="floating-cart-btn" id="floatingCartBtn" aria-label="Abrir carrinho de compras">
+    <div class="cart-icon-wrapper">
+      <svg viewBox="0 0 24 24">
+        <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+      </svg>
+      <span class="cart-count-badge" id="cartCountBadge">0</span>
+    </div>
+    <span>Ver Pedido</span>
+  </button>
+
+  <!-- DRAWER DO CARRINHO -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Seu Pedido">
+    <div class="cart-drawer-header">
+      <h3 class="cart-drawer-title">
+        <span>🍔</span> Seu Pedido
+      </h3>
+      <button class="btn-close-drawer" id="btnCloseDrawer" aria-label="Fechar">✕</button>
+    </div>
+    <div class="cart-drawer-body" id="cartItemsList"></div>
+    <div class="cart-drawer-footer">
+      <div class="cart-total-row">
+        <span>Total:</span>
+        <span class="cart-total-amount" id="cartTotalAmount">R$ 0,00</span>
+      </div>
+      <div class="cart-form-group">
+        <label for="clientName">Seu Nome:</label>
+        <input type="text" id="clientName" class="cart-form-input" placeholder="Ex: Maria Silva">
+      </div>
+      <div class="cart-form-group">
+        <label for="deliveryType">Tipo:</label>
+        <select id="deliveryType" class="cart-form-select">
+          <option value="Entrega (Delivery)">Entrega (Delivery)</option>
+          <option value="Retirada no Balcão">Retirada no Balcão</option>
+          <option value="Consumo no Local">Consumo no Local</option>
+        </select>
+      </div>
+      <div class="cart-form-group">
+        <label for="clientAddress">Endereço de Entrega:</label>
+        <input type="text" id="clientAddress" class="cart-form-input" placeholder="Rua, número e bairro">
+      </div>
+      <div class="cart-form-group">
+        <label for="orderNotes">Observações:</label>
+        <input type="text" id="orderNotes" class="cart-form-input" placeholder="Ex: sem cebola, ponto da carne...">
+      </div>
+      <button class="btn-checkout-whatsapp" id="btnCheckoutWhatsApp">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.78 14.15c-.24.67-1.39 1.28-1.92 1.36-.51.08-1.17.11-3.79-.96-3.34-1.37-5.48-4.76-5.65-4.98-.16-.23-1.35-1.8-1.35-3.43 0-1.63.85-2.43 1.15-2.76.3-.33.66-.41.88-.41.22 0 .44.002.63.013.2.01.47-.077.74.57.28.67.95 2.33 1.04 2.5.08.17.14.37.03.6-.11.22-.17.36-.33.56-.16.2-.34.45-.49.6-.16.16-.33.34-.14.67.19.33.84 1.38 1.8 2.24 1.24 1.1 2.29 1.44 2.62 1.6.33.16.52.14.71-.08.2-.22.84-.98 1.07-1.32.22-.33.45-.28.75-.17.31.11 1.95.92 2.29 1.08.33.16.56.24.64.38.08.14.08.82-.16 1.49z"/>
+        </svg>
+        ENVIAR PEDIDO NO WHATSAPP
+      </button>
+    </div>
+  </aside>
+
+  <!-- SCRIPTS -->
+  <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>

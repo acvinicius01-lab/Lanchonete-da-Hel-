@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" width="280" height="80" fill="none">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&amp;family=Fredoka:wght@600;700&amp;display=swap');
+      .logo-title-sub {
+        font-family: 'Fredoka', cursive, sans-serif;
+        font-size: 23px;
+        font-weight: 700;
+        fill: #FFFFFF;
+        letter-spacing: 0.5px;
+      }
+      .logo-title-main {
+        font-family: 'Caveat', cursive, sans-serif;
+        font-size: 46px;
+        font-weight: 700;
+        fill: #F5A623;
+      }
+      .spark {
+        stroke: #F5A623;
+        stroke-width: 2.5;
+        stroke-linecap: round;
+      }
+      .hat-path {
+        fill: none;
+        stroke: #FFFFFF;
+        stroke-width: 3.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+
+  <!-- Chef Hat Icon -->
+  <g transform="translate(10, 14)">
+    <path class="hat-path" d="M12 28 C6 28, 4 20, 8 15 C4 11, 8 4, 16 6 C20 0, 29 0, 33 6 C41 4, 45 11, 41 15 C45 20, 43 28, 37 28 Z" />
+    <path class="hat-path" d="M12 28 L37 28 L35 37 L14 37 Z" />
+    <line x1="16" y1="33" x2="33" y2="33" stroke="#F5A623" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <!-- Brand Text -->
+  <text x="68" y="32" class="logo-title-sub">Lanchonete</text>
+  <text x="66" y="66" class="logo-title-main">da Helô</text>
+
+  <!-- Sparks / Rays -->
+  <g transform="translate(230, 46)">
+    <line class="spark" x1="0" y1="0" x2="13" y2="-5" />
+    <line class="spark" x1="2" y1="5" x2="16" y2="7" />
+    <line class="spark" x1="0" y1="12" x2="12" y2="19" />
+  </g>
+</svg>

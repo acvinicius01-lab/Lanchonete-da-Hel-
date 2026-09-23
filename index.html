@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lanchonete da Helô - Sabor que vira tradição!</title>
+  <meta name="description" content="Na Lanchonete da Helô, cada receita é feita com carinho para deixar o seu dia muito mais gostoso! Lanches artesanais, porções crocantes e sobremesas irresistíveis.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+</head>
+<body>
+
+  <!-- CABEÇALHO / NAVBAR -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Lanchonete da Helô Início">
+        <img src="assets/images/logo.svg" alt="Lanchonete da Helô" width="220" height="60">
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+        <a href="index.html" class="nav-link active">Início</a>
+        <a href="cardapio.html" class="nav-link">Cardápio</a>
+        <a href="sobre.html" class="nav-link">Sobre Nós</a>
+        <a href="galeria.html" class="nav-link">Galeria</a>
+        <a href="contato.html" class="nav-link">Contato</a>
+      </nav>
+
+      <a href="cardapio.html" class="btn-header-order trigger-open-cart">
+        <svg viewBox="0 0 24 24">
+          <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.78 14.15c-.24.67-1.39 1.28-1.92 1.36-.51.08-1.17.11-3.79-.96-3.34-1.37-5.48-4.76-5.65-4.98-.16-.23-1.35-1.8-1.35-3.43 0-1.63.85-2.43 1.15-2.76.3-.33.66-.41.88-.41.22 0 .44.002.63.013.2.01.47-.077.74.57.28.67.95 2.33 1.04 2.5.08.17.14.37.03.6-.11.22-.17.36-.33.56-.16.2-.34.45-.49.6-.16.16-.33.34-.14.67.19.33.84 1.38 1.8 2.24 1.24 1.1 2.29 1.44 2.62 1.6.33.16.52.14.71-.08.2-.22.84-.98 1.07-1.32.22-.33.45-.28.75-.17.31.11 1.95.92 2.29 1.08.33.16.56.24.64.38.08.14.08.82-.16 1.49z"/>
+        </svg>
+        FAÇA SEU PEDIDO
+      </a>
+
+      <!-- Botão Hambúrguer Mobile -->
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menu de navegação">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-title">
+            <span class="hero-title-top">SABOR QUE</span>
+            <span class="hero-title-sub">
+              <span class="spark-accent">✨</span>
+              vira tradição!
+              <span class="spark-accent">✨</span>
+            </span>
+          </div>
+          <p class="hero-description">
+            Na <strong>Lanchonete da Helô</strong>, cada receita é feita com carinho para deixar o seu dia muito mais gostoso!
+          </p>
+          <div class="hero-actions">
+            <a href="cardapio.html" class="btn-primary">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 7c0-1.1-.9-2-2-2h-3v2h3v2.65L13.52 14H10V9H6c-2.21 0-4 1.79-4 4v3h2c0 1.66 1.34 3 3 3s3-1.34 3-3h4.48L19 10.35V7zM7 17c-.55 0-1-.45-1-1h2c0 .55-.45 1-1 1zm12-5.5V10h-2.12l1.62-2.5 1.62 2.5H19v1.5z"/>
+                <circle cx="17.5" cy="16.5" r="2.5"/>
+              </svg>
+              PEÇA AGORA
+            </a>
+            <a href="cardapio.html" class="btn-secondary-outline">
+              VER CARDÁPIO
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="hero-image-wrapper">
+            <img src="assets/images/hero-burger.jpg" alt="Delicioso hambúrguer artesanal da Lanchonete da Helô com batatas fritas crocantes" width="580" height="380" fetchpriority="high">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIVISOR EM ONDA DOURADA -->
+    <div class="wave-divider" aria-hidden="true">
+      <svg viewBox="0 0 1440 64" fill="none" preserveAspectRatio="none">
+        <path d="M0,0 C320,60 720,60 1440,0 L1440,64 L0,64 Z" fill="#faf5ee"/>
+        <path d="M0,0 C360,50 820,50 1440,0" stroke="#f5a623" stroke-width="4" fill="none"/>
+      </svg>
+    </div>
+
+    <!-- SEÇÃO "O QUE VOCÊ VAI ENCONTRAR AQUI" -->
+    <section class="categories-section">
+      <div class="container">
+        <h2 class="section-badge-title">
+          <span class="spark-accent">✨</span>
+          O que você vai encontrar aqui
+          <span class="spark-accent">✨</span>
+        </h2>
+
+        <div class="categories-grid">
+          <!-- 1. Lanches -->
+          <a href="cardapio.html#lanches" class="category-card">
+            <div class="category-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M19 13H5c-1.1 0-2 .9-2 2v1h18v-1c0-1.1-.9-2-2-2zm-7-9C7.58 4 4 7.58 4 12h16c0-4.42-3.58-8-8-8zm-9 14h18v2c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2v-2z"/>
+              </svg>
+            </div>
+            <h3 class="category-name">Lanches</h3>
+            <p class="category-desc">Suculentos e cheios de sabor</p>
+          </a>
+
+          <!-- 2. Porções -->
+          <a href="cardapio.html#porcoes" class="category-card">
+            <div class="category-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M7 3h2v10H7zm4 0h2v10h-2zm4 0h2v10h-2zM5 15h14l-1.5 6H6.5z"/>
+              </svg>
+            </div>
+            <h3 class="category-name">Porções</h3>
+            <p class="category-desc">Perfeitas para compartilhar</p>
+          </a>
+
+          <!-- 3. Bebidas -->
+          <a href="cardapio.html#bebidas" class="category-card">
+            <div class="category-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M5 21h14a1 1 0 0 0 1-1L21 6H3l1 14a1 1 0 0 0 1 1zm2.5-13h9l-.7 11H8.2L7.5 8zM19 4H5V2h14v2z"/>
+                <path d="M13 2v6h2V2z"/>
+              </svg>
+            </div>
+            <h3 class="category-name">Bebidas</h3>
+            <p class="category-desc">Geladas para acompanhar</p>
+          </a>
+
+          <!-- 4. Sobremesas -->
+          <a href="cardapio.html#sobremesas" class="category-card">
+            <div class="category-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm9 8.5c-.83 0-1.5-.67-1.5-1.5 0-1.66-1.34-3-3-3s-3 1.34-3 3c0 .83-.67 1.5-1.5 1.5S10.5 13.83 10.5 13c0-1.66-1.34-3-3-3s-3 1.34-3 3c0 .83-.67 1.5-1.5 1.5-.83 0-1.5.67-1.5 1.5v5c0 .55.45 1 1 1h18c.55 0 1-.45 1-1v-5c0-.83-.67-1.5-1.5-1.5z"/>
+              </svg>
+            </div>
+            <h3 class="category-name">Sobremesas</h3>
+            <p class="category-desc">O toque doce que encanta</p>
+          </a>
+
+          <!-- 5. Combos -->
+          <a href="cardapio.html#combos" class="category-card">
+            <div class="category-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M16 11h-1V9c0-1.1-.9-2-2-2h-2c-1.1 0-2 .9-2 2v2H8c-1.1 0-2 .9-2 2v7c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2v-7c0-1.1-.9-2-2-2zm-5-2h2v2h-2V9zm7 11H8v-7h8v7zm3-12h-2V3c0-.55-.45-1-1-1h-2v2h1v4h2V6z"/>
+              </svg>
+            </div>
+            <h3 class="category-name">Combos</h3>
+            <p class="category-desc">Mais sabor por um preço especial</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNER DESTAQUE "FEITO COM AMOR, SERVIDO PRA VOCÊ!" -->
+    <section class="story-banner-section">
+      <div class="container">
+        <div class="story-card">
+          <div class="story-card-media">
+            <img src="assets/images/interior-tables.jpg" alt="Salão aconchegante da Lanchonete da Helô" width="380" height="260" loading="lazy">
+          </div>
+
+          <div class="story-card-content">
+            <h2 class="story-title">
+              Feito com amor,
+              <span class="highlight-gold">servido pra você!</span>
+              <span class="story-heart">♡</span>
+            </h2>
+            <p class="story-text">
+              A <strong>Lanchonete da Helô</strong> nasceu do sonho de oferecer comida gostosa, atendimento de verdade e aquele ambiente acolhedor que a gente ama. Aqui, você não é só cliente, é parte da nossa família!
+            </p>
+
+            <div class="story-features">
+              <div class="story-feature-item">
+                <div class="feature-icon-badge">
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="9" r="6" stroke="currentColor" stroke-width="2" fill="none"/>
+                    <path d="M8.5 14.5L6 22l6-3 6 3-2.5-7.5" fill="currentColor"/>
+                  </svg>
+                </div>
+                <div class="feature-texts">
+                  <h4>Ingredientes selecionados</h4>
+                  <p>Qualidade em cada detalhe</p>
+                </div>
+              </div>
+
+              <div class="story-feature-item">
+                <div class="feature-icon-badge">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                  </svg>
+                </div>
+                <div class="feature-texts">
+                  <h4>Atendimento acolhedor</h4>
+                  <p>Aqui você se sente em casa</p>
+                </div>
+              </div>
+
+              <div class="story-feature-item">
+                <div class="feature-icon-badge">
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" fill="none"/>
+                    <path d="M12 7v5l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div class="feature-texts">
+                  <h4>Rapidez e carinho</h4>
+                  <p>Seu pedido, do jeito que deve ser</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FRASE TAGLINE -->
+    <div class="home-tagline-footer">
+      <span class="heart-icon">♡</span>
+      <strong>Lanchonete da Helô</strong> — Mais que uma lanchonete, um lugar pra chamar de seu!
+      <span class="spark-accent">✨</span>
+    </div>
+  </main>
+
+  <!-- RODAPÉ COMPLETO -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="assets/images/logo.svg" alt="Lanchonete da Helô" width="200" height="50" style="margin-bottom: 14px;">
+          <p>Feito com amor, carinho e receitas tradicionais para proporcionar a melhor experiência a você e sua família.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <div class="footer-links">
+            <a href="index.html">Início</a>
+            <a href="cardapio.html">Nosso Cardápio</a>
+            <a href="sobre.html">Sobre a Helô</a>
+            <a href="galeria.html">Galeria de Fotos</a>
+            <a href="contato.html">Onde Estamos</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Horário de Funcionamento</h4>
+          <p>Terça a Domingo<br>das 18h às 23h30<br><em>(Segundas-feiras fechado)</em></p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Peça sem Sair de Casa</h4>
+          <p>Atendimento rápido pelo WhatsApp com delivery para toda a região!</p>
+          <a href="cardapio.html" class="btn-primary" style="margin-top: 12px; padding: 10px 20px; font-size: 0.9rem;">
+            Fazer Pedido
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        © 2026 Lanchonete da Helô. Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE DO CARRINHO -->
+  <button class="floating-cart-btn" id="floatingCartBtn" aria-label="Abrir carrinho de compras">
+    <div class="cart-icon-wrapper">
+      <svg viewBox="0 0 24 24">
+        <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+      </svg>
+      <span class="cart-count-badge" id="cartCountBadge">0</span>
+    </div>
+    <span>Ver Pedido</span>
+  </button>
+
+  <!-- DRAWER DO CARRINHO -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Seu Pedido">
+    <div class="cart-drawer-header">
+      <h3 class="cart-drawer-title">
+        <span>🍔</span> Seu Pedido
+      </h3>
+      <button class="btn-close-drawer" id="btnCloseDrawer" aria-label="Fechar">✕</button>
+    </div>
+
+    <div class="cart-drawer-body" id="cartItemsList">
+      <!-- Inserido dinamicamente pelo cart.js -->
+    </div>
+
+    <div class="cart-drawer-footer">
+      <div class="cart-total-row">
+        <span>Total:</span>
+        <span class="cart-total-amount" id="cartTotalAmount">R$ 0,00</span>
+      </div>
+
+      <div class="cart-form-group">
+        <label for="clientName">Seu Nome:</label>
+        <input type="text" id="clientName" class="cart-form-input" placeholder="Ex: Maria Silva">
+      </div>
+
+      <div class="cart-form-group">
+        <label for="deliveryType">Tipo:</label>
+        <select id="deliveryType" class="cart-form-select">
+          <option value="Entrega (Delivery)">Entrega (Delivery)</option>
+          <option value="Retirada no Balcão">Retirada no Balcão</option>
+          <option value="Consumo no Local">Consumo no Local</option>
+        </select>
+      </div>
+
+      <div class="cart-form-group">
+        <label for="clientAddress">Endereço de Entrega:</label>
+        <input type="text" id="clientAddress" class="cart-form-input" placeholder="Rua, número e bairro">
+      </div>
+
+      <div class="cart-form-group">
+        <label for="orderNotes">Observações:</label>
+        <input type="text" id="orderNotes" class="cart-form-input" placeholder="Ex: sem cebola, ponto da carne...">
+      </div>
+
+      <button class="btn-checkout-whatsapp" id="btnCheckoutWhatsApp">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.78 14.15c-.24.67-1.39 1.28-1.92 1.36-.51.08-1.17.11-3.79-.96-3.34-1.37-5.48-4.76-5.65-4.98-.16-.23-1.35-1.8-1.35-3.43 0-1.63.85-2.43 1.15-2.76.3-.33.66-.41.88-.41.22 0 .44.002.63.013.2.01.47-.077.74.57.28.67.95 2.33 1.04 2.5.08.17.14.37.03.6-.11.22-.17.36-.33.56-.16.2-.34.45-.49.6-.16.16-.33.34-.14.67.19.33.84 1.38 1.8 2.24 1.24 1.1 2.29 1.44 2.62 1.6.33.16.52.14.71-.08.2-.22.84-.98 1.07-1.32.22-.33.45-.28.75-.17.31.11 1.95.92 2.29 1.08.33.16.56.24.64.38.08.14.08.82-.16 1.49z"/>
+        </svg>
+        ENVIAR PEDIDO NO WHATSAPP
+      </button>
+    </div>
+  </aside>
+
+  <!-- SCRIPTS -->
+  <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>
